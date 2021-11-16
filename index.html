@@ -13,7 +13,7 @@
     <h1 class='titulo'>To Do List</h1>
     <div id='container'>
         <input id='text-input' type="text" class='inserir' placeholder="Adicionar nova tarefa">
-        <button>Adicionar</button>
+        <button onclick="add()">Adicionar</button>
         <h3>Lista</h3>
         <ul id='lista'>
             <li>item 1</li>
@@ -24,8 +24,26 @@
     </div>
 
     <script>
+        // referencia elementos que vou utilizar
         const input = document.getElementById('text-input')
-        console.log(input)
+        const ul = document.getElementById('lista')
+
+        function add() {
+            // pega o texto do input
+            const texto = input.value
+
+            // cria um novo elemento <li></li>
+            const li = document.createElement('li')
+
+            // adiciona o texto dentro do elemento li
+            li.innerText = texto
+
+            // adiciona o elemento li (já com o texto) dentro da lista
+            ul.appendChild(li)
+
+            // apaga o valor no input
+            input.value = ""
+        }
     </script>
 </body>
 
