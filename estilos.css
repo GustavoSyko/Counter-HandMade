@@ -13,7 +13,6 @@ header {
 }
 
 #container {
-    width: 200px;
-    height: 100px;
-    margin: auto;
+    margin: 100px, 100px, 100px, 100px;
+    background: black;
 }
