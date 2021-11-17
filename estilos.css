@@ -16,11 +16,8 @@ body {
 
 .titulo {
     padding: 10px 5px;
-    text-align: center;
     background: rgba(0, 0, 0, 0.418);
     border-radius: 25px;
-    /* position: fixed; */
-    /* top: 15px; */
 }
 
 #container {
